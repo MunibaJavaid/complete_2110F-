@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #main2{
+            border:1px solid black;
+            background-color: black;
+        }
+        #main2 h3{
+            display: inline-block;
+            margin-left: 800px;
+            color: red;
+            font-size: 25px;
+            font-weight: 900;
+        }
+        #main2 form{
+            margin-left: 45px;
+            display: inline-block;
+        }
+        input[type=text]{
+            margin-left: 5px;
+            padding: 8px;
+            border: 2px solid black;
+        }
+        label{
+            color: white;
+            font-size: 25px;
+        }
+        button{
+            background-color: darkseagreen;
+            padding: 8px;
+            color: white;
+            width: 100px;
+        }
+        #div2{
+           
+            background-color: rgb(241, 236, 238);
+            padding: 5px;
+        }
+        #div2 img{
+            width: 100px;
+            display: inline-block;
+            width: 100px;
+            margin-left: 20px;
+        }
+       
+        #nav{
+            display: inline-block;
+            float: right;
+           
+        }
+        
+        #nav li{
+            display: inline-block;
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+        #nav li a{
+            text-decoration: none;
+            padding: 15px 20px 15px 20px;
+            border: 2px solid red;
+            color: white;
+            background-color: black;
+        }
+        #nav li a:hover{
+            background-color: darkseagreen;
+            color: white;
+            font-size: 20px;
+        }
+        #div3{
+            height: 350px;
+            background-image: url("bg_img.jpg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           opacity: 0.8;
+           border: 2px solid black;
+        }
+        #div3 h1{
+            text-align: center;
+            color: black;
+            font-size: 50px;
+        
+            margin-top: 140px;
+        }
+        #div3 h1:hover{
+            color: red;
+            font-size: 55px;
+        }
+        #div4 h1{
+            text-align: center;
+        }
+        #div6 img{
+            width: 500px;
+        }
+        #div6 #butter1{
+            border: 2px solid black;
+            margin-left: 200px;
+
+        }
+        #div6 #butter2{
+            border: 2px solid black;
+            margin-left: 100px;
+            
+        }
+        #div7{
+            margin-top: 5px;
+        }
+        #div7 #btn1{
+            margin-left: 400px;
+        }
+        #div7 #btn2{
+            margin-left: 500px;
+        }
+        #div8 img{
+            width: 500px;
+            margin-top: 5px;
+        }
+        #div8 #img_1{
+            border: 2px solid black;
+            margin-left: 200px;
+
+        }
+        #div8 #img_2{
+            border: 2px solid black;
+            margin-left: 100px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    
+  
+    <div id = "main2">
+        <form>
+            <label for="txt">Name</label>
+            <input type="text" id="txt" placeholder="Enter Name">
+            <button type="button" onclick="info()">Click</button>
+        </form>
+        <h3 id = "get_name">Change Name</h3>
+    </div>
+
+    <div id = "div2" style="border: 1px solid black;">
+        
+        <img src="logo.jpg" alt="logo" >
+        
+        <ul id = "nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div id = "div3">
+        <H1 >WEB DEVELOPER</H1>
+    </div>
+    <div id = "div4">
+        <h1>CHANGE IMAGES</h1>
+    </div>
+    <div id = "div6">
+       <img src="butterfly11.jpg" alt="butterfly1" id = "butter1" >
+       <img src="butterfly12.jpg" alt="butterfly1" id = "butter2">
+    </div>
+    <div id = "div7">
+        <button type="button" id = "btn1" onclick="change_first_img()">Change Image1</button>
+        <button type="button" id = "btn2" onclick="change_first_img2()">Change Image2</button>
+     </div>
+     <div id = "div8">
+        <img src = "butterfly11.jpg" alt = "alernate_image" id = "img_1" >
+        <img src = "butterfly12.jpg"  alt = "alernate_image" id = "img_2">
+     </div>
+
+
+    <script>
+        function info(){
+
+            var nm = document.getElementById('txt').value;
+            var mm = document.getElementById("get_name").innerHTML = nm;
+            alert("Change your name successfully" +mm)
+        }
+        function change_first_img(){
+            document.getElementById("img_1").src = "butterfly12.jpg"
+        }
+        function change_first_img2(){
+            document.getElementById("img_2").src = "butterfly11.jpg"
+        }
+    </script>
+</body>
+
+</html>

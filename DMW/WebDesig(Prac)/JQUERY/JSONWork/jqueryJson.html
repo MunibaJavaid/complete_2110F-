@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="result"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var Student = [
+
+                { "name": "John", "age": 30, "city": "NewYork" },
+                { "name": "David", "age": 40, "city": "London" }
+            ]
+
+
+            var str =  JSON.stringify(Student);
+         
+            var myArr =JSON.parse(str)
+            var out = " ";
+
+            for(var key in myArr){
+                    
+                    var obj = myArr[key];
+                     out += " name : " + obj.name + " Age : "+ obj.age + " City : " + obj.city+ "<br><br>";
+                 
+            }
+            $("#result").html(out);
+
+           
+        })
+    </script>
+</body>
+
+</html>

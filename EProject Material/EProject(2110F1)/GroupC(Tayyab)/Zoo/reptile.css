@@ -1,0 +1,132 @@
+ /* navbar */
+ .navbar {
+    border: 1px solid black;
+}
+
+ .nav-link{
+    color:white !important;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-title{
+    color: black;
+    font-size: 55px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-title:hover{
+    text-decoration: none;
+}
+
+.form-inline{
+    margin-left: auto;
+}
+
+/* Carousel */
+#rep-image{
+    margin-top: 80px;
+    background-image: url("Images/reptile\ img.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    color: white;
+    opacity: 100%;
+    width: 100%;
+}
+#rep-image p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.rep-head{
+    font-size: 50px;
+    padding-top: 220px;
+    text-align: center;
+}
+#head{
+    text-align: center;
+    margin-bottom: 50px;
+    color: blue;
+    text-shadow: 2px 2px 5px green ;
+    font-weight: bold;
+    font-size: 60px;
+}
+.card-img-top{
+    height: 300px;
+}
+.modal-header{
+    background-color:rgba(207, 160, 72, 0.418);
+}
+.modal-footer{
+    background-color:rgba(207, 160, 72, 0.418);
+}
+.modal-dialog{
+   max-width:600px;
+}
+.modal-content{
+    border: 3px solid yellow;
+}
+.main-side{
+    display: flex;
+    background-color:rgba(207, 160, 72, 0.418);
+}
+.left-side{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.right-side img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.right-side{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+ /* footer */
+ .row h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:rgba(223, 223, 223, 0.959);
+
+}
+.info{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.list-unstyled a{
+    color:white;
+    text-decoration: none;
+}
+.list-unstyled a:hover{
+    color: rgb(253, 46, 46);
+}
+.footer-copyright{
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.footer-copyright span{
+    color: rgb(253, 46, 46);
+    font-size: 20px;
+}
+.footer-copyright a{
+    color: rgb(241, 181, 28);
+    font-size: 20px;
+}
+#social-icons a{
+   font-size: 40px;
+   margin-left: 25px;
+}
+
+#social-icons{
+    width: 100%;
+}
+
+ 

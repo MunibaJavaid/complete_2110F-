@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id="mydiv"></div>
+
+    <script>
+       var story;
+       story="A salt seller used to carry the salt bag on his Doney to the market every day.On the way they had to cross a stream. One day the donky suddenly tumbled down the stream and the salt bag also fell into the water. The salt dissolved in the water and hence the bag became very light to carry. The donkey was happy. Then the donkey started to play the same trick every day.The salt seller came to understand the trick and decided to teach a lesson to it. The next day he loaded a cotton bag on the donkey.Again it played the same trick hoping that the cotton bag would be still become lighter. But the dampened cotton became very heavy to carry and the donkey suffered. It learnt a lesson. It didn’t play the trick anymore after that day, and the seller was happy."
+       var namesearch=/donk?ey/ig;
+       var updateStory=story.replace(namesearch,"Horse");
+       document.getElementById("mydiv").innerHTML=updateStory;
+    </script>
+    
+</body>
+</html>

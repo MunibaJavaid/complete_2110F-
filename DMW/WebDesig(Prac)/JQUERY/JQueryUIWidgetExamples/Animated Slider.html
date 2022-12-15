@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+
+   <link rel="stylesheet" href="JqueryCdnFiles/jquery-ui-themes-1.13.1/jquery-ui.css">
+
+</head>
+
+<body>
+
+   <div id="slider"></div>
+
+
+   <script src="JqueryCdnFiles/jquery-3.6.0.js"></script>
+   <script src="JqueryCdnFiles/jquery-ui-1.13.1/jquery-ui.js"></script>
+
+
+
+   <script>
+
+      $(function () {
+         $("#slider").slider({
+            value: 60,
+            animate: "slow",
+            orientation: "vertical"
+         });
+      });
+
+   </script>
+</body>
+
+</html>

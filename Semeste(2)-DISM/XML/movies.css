@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:'Century Gothic', serif;
+}
+
+name{
+	color:red;
+	font-weight:bold;
+}
+year{
+	color:blue;
+	font-style:italic;	
+}
+	
+

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Zoo</title>
+    <link rel="stylesheet" href= "bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href= "fontawesome-free-6.0.0-web/css/all.css">  
+    <link rel="stylesheet" href= "the zoo.css">
+</head>
+<body>
+
+           <!-- NavBar -->
+           <nav class="navbar navbar-expand-md bg-danger navbar-dark fixed-top">
+
+
+            <a class="navbar-brand" href="the zoo.html"><img src="Images/logo1.png" alt="logo" width="120"></a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    
+                <ul class="navbar-nav ml-3">
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="the zoo.html">Home</a>
+                    </li>
+    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            More Info
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="menbership.html">Membership</a>
+                            <a class="dropdown-item" href="Ticket.html">Ticket</a>
+                            <a class="dropdown-item" href="events.html">Events</a>
+                        </div>
+                    </li>
+                </ul>
+    
+                
+                <form class="form-inline">
+    
+                    <div class="input-group">
+    
+                        <input type="text" class="form-control" placeholder="Search" id="inp">
+                        
+                        <div class="input-group-append ">
+                            <button type="button" class="btn btn-secondary bg-primary" id="search">
+                                <i class="fa fa-search"></i></button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+      <!---CAROUSEL-->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img" src="Images/the zoo.jpg"  alt="img2">
+                <div class="carousel-caption">
+                
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="img" src="Images/the zoo1.jpg" alt="img3">
+                <div class="carousel-caption">
+                   
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="img" src="Images/the zoo2.jpg" alt="img4">
+                <div class="carousel-caption">
+                   
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div><br><br>
+
+    <div id="intro-div col-sm-12 col-md-6 col-lg-3">
+        <h1 class="head1">
+           This Zoo is an international, nonprofit conservation organization with two front doors. We integrate wildlife
+             health and care, science, and education to develop sustainable conservation solutions. Conservation
+              is at the heart of everything we do. And it starts with that connection we make with people and
+               wildlife every day. Because <b> when wildlife thrives, all life thrives.</b>
+        </h1>
+    </div><br><br>
+    <h1 class=" text-center text-muted mt-5" id="not_find_any_thing"></h1>
+
+    <!-- cards -->
+    <div class= "row container-fluid">
+        <div class= "col-sm-12 col-md-6 col-lg-6">
+            <div class="card">
+                <img class="card-img-top" src="images/reptiles.jpg" alt="Card image" >
+                <div class="card-body">
+                    <h4 class="card-title"><b> Reptiles</b></h4>
+                    <p class="card-text">Reptiles are cold-blooded vertebrates. (Vertebrates have backbones.)
+                         They have dry skin covered with scales or bony plates and usually
+                          lay soft-shelled eggs.Reptiles are in thr class Reptilia, a paraphyletic grouping 
+                          comprising all sauropsid amniotes except Aves.
+                    </p>
+                    <a href="Reptiles.html" class="btn btn-danger m-auto">See More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class= "col-sm-12 col-md-6 col-lg-6">
+            <div class="card">
+                <img class="card-img-top" src="images/mammals.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title"><b> Mammals</b></h4>
+                    <p class="card-text">
+                        Mammals include humans and all other animals that are warm-blooded vertebrates
+                         (vertebrates have backbones) with hair. They feed their young 
+                         with milk and have a more well-developed brain than other types of animals.They are a group of vertebrates constituting the class Mammalia
+                    </p>
+                    <a href="Mammals.html" class="btn btn-danger">See More</a>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+
+    <!-- Feedback -->
+    <div class="main-contact container-fluid">
+      <h3>STAY UPDATED WITH THE ZOO!</h3> <hr>
+      <p id="cont-p">Enter your email address below and check the box next to the types of
+           communication you'd like to receive.</p>
+  
+           <div class="row container align-items-center text-center" id="first">
+
+             <div class="col-sm-12 col-md-12 col-lg-4">
+              First Name :<input type="text">
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4"> 
+              Last Name :<input type="text">
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4">
+              E-mail(req):<input type="email">
+              </div>
+
+           </div><br>
+           <div id="second">
+               <h5>Select list(s) to subscribe to</h5>
+               <input type="checkbox"> Zoo news and information
+               <input type="checkbox"> Events, activities and educational experiences
+               <input type="checkbox"> Education programs
+               <button type="submit" id="btn">Submit</button>
+               <hr>
+               <p>By submitting this form, you are consenting to receive marketing
+                    emails from: Central Society. You can revoke your consent to
+                     receive emails</p>
+           </div>
+      </div>
+
+     <!-- Footer -->
+<footer class="page-footer font-small indigo bg-dark">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left ">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="mt-3 mb-3">Quick Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="the zoo.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="mt-3 mb-3">Animals Corner</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="Mammals.html">Mammals</a>
+            </li>
+            <li>
+              <a href="Reptiles.html">Reptiles</a>
+            </li>
+            <li>
+              <a href="CARNOVORES1.HTML">Carnivorus</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="mt-3 mb-3">Zoo Policy</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="menbership.html">Membership</a>
+            </li>
+            <li>
+              <a href="photo policy.html">Photo Policy</a>
+            </li>
+            <li>
+              <a href="Ticket.html">Ticket</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+
+            <h5 class="mt-3 mb-3 ">Latest Update From Zoo</h5>
+
+            <p class="info">Get latest update from Zoo</p>
+  
+          <form class="input-group mt-4">
+            <input type="email"class="form-control form-control-md" placeholder="E-mail" required>
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-primary my-0" id="submit" type="submit" onclick="email()">Sign up</button>
+            </div>
+          </form>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+      
+      </div>
+    <!-- Footer Links -->
+  <div class="row align-items-center d-flex "  id="social-icons">
+    <div class="col-sm-12 col-md-12 col-lg-12 text-center mt-4" id="face">
+          <a href="https://www.facebook.com/" class="text-primary">
+          <i class="fa-brands fa-facebook"></i></a>   
+       <a href="https://www.instagram.com/" class="text-danger">
+          <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/" class="text-primary">
+          <i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"><span> © </span>2022 Copyright:
+      <a href="the zoo.html"> Centeral Zoo.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>   
+
+  
+
+
+    <script src = "bootstrap-4.6.1-dist/js/jquery-3.6.0.slim.min.js"></script>
+    <script src = "bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+
+    <script>
+         function email(){
+      document.getElementById('submit').click
+      alert("Latest update will be send through your e-mails.Thanks")
+         }
+
+       //jquery coding
+$(document).ready(function(){
+    $('#search').click(function(){
+
+
+      var checker = 0; 
+      for (var i = 0; i < 2; i++) {
+
+
+        var card = $("div").filter(".col-sm-12")[i];
+        var title = $("h4").filter(".card-title")[i].innerText.toUpperCase();
+
+        
+        if (title.indexOf($("#inp").val().toUpperCase()) > -1) {
+          card.style.display = 'block';
+          checker++;
+        }
+        else{
+          card.style.display = 'none';
+        }
+      }
+      
+  if (checker > 0) {
+    $("#not_find_any_thing").text("");
+  }
+  else {
+    $("#not_find_any_thing").text("No Result Found").fadeIn();
+  }
+
+
+
+
+
+
+    });
+});
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            background-color: yellow;
+            border: 5px double blue;
+            /* justify-content: flex-end; */
+            padding: 10px 20px 10px 20px;
+            /* flex-wrap: wrap; */
+        }
+        .flex-container div{
+            width: 50px;
+            border:2px solid purple;
+            margin: 0px 5px 0px 5px;
+            padding: 5px 10px 5px 10px;
+            text-align: center;
+            border-radius: 2px;
+        }
+         #ending{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>Flex A</div>
+        <div>Flex B</div>
+        <div>Flex C</div>
+        <div style= "margin-left: auto;">Logout</div>
+    </div>
+    
+</body>
+</html>

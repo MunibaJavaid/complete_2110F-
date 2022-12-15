@@ -1,0 +1,145 @@
+/* #head1{
+    text-decoration: underline;
+    color:blueviolet
+    
+}
+#head2{
+    text-decoration: overline;
+    color: red;
+}
+#head3{
+    text-decoration: line-through;
+    color: cadetblue;
+}
+#para{
+    color: darkblue;
+}
+#para a{
+    text-decoration: none;
+}
+.upper{
+    text-transform: uppercase;
+    text-indent: 15%;
+    letter-spacing: 3px;
+}
+.lower{
+    text-transform: lowercase;
+    word-spacing: 10px;
+    text-shadow: 2px 2px 8px red;
+
+}
+.capi{
+    text-transform: capitalize;
+}
+#para1{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+#span{
+    color: darkorange;
+    
+}
+#demo{
+    background-color: darkseagreen;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    padding: 20px 40px 30px 15px;
+}
+#demo h1{
+    text-align: center;
+    color: red;  
+}
+
+#demo2{
+    background-color: darksalmon;
+    border:1px solid black;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+.demo3{
+   
+    border-top-style: solid;
+    border-bottom-style: dashed;
+    border-left-style: dotted;
+    border-right-style: double;
+    border-color: darkgoldenrod red green deeppink;
+    border-width: 5px;
+    padding:10px 15px 10px 15px;
+    background-color: coral;
+    width:90%;
+    margin: auto;
+    margin-bottom: 90px;
+    box-shadow: 4px 4px 6px red;
+}
+.demo3 p{
+    font-weight: bold;
+}
+.demo3:hover{
+    background-color: deeppink;
+}
+
+.dotted{
+    border-style: dotted;
+    border-width: 5px;
+    border-color: darkblue;
+}
+.dashed{
+    border: 5px dashed orange
+}
+.solid{
+    border: 5px solid green;
+}
+.double{
+    border:5px double seagreen;
+}
+.groove{
+    border:5px groove red;
+}
+.ridge{
+    border:5px ridge purple
+}
+.inset{
+    border:5px inset indianred;
+}
+.outset{
+    border:5px outset deeppink;
+}
+.none{
+    border:5px none darkgoldenrod;
+}
+.hidden{
+    border:5px hidden darkgoldenrod;
+
+} */
+
+#img{
+    float: left;
+    width: 200px;
+    height: 170px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

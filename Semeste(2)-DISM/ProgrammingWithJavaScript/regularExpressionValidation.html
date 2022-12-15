@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <form name="fm">
+
+            <table width="500">
+                <tr>
+                    <td colspan="2" align="center">
+                        <h3>Form Validation</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Enter your Name</label></td>
+                    <td> <input type="text" name="txtname" id="box_1"> </td> //abc
+                    <td><label id="lb_1"></label></td>
+                </tr>
+                <tr>
+                    <td><label>Enter your Email</label></td>
+                    <td> <input type="text" name="txtemail" id="box_2"> </td>
+                    <td><label id="lb_2"></label></td>
+                </tr>
+                <tr>
+                    <td><label>Enter your Number</label></td>
+                    <td> <input type="text" name="txtnumber" id="box_3"> </td>
+                    <td><label id="lb_3"></label></td>
+                </tr>
+                <tr>
+                    <td><label>Select Country</label>Select</td>
+                    <td>
+                        <select name="country" id="">
+                            <option>Select Country</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="India">India</option>
+                            <option value="Srilanka">Srilanka</option>
+                            <option value="China">China</option>
+                        </select>
+                    </td>
+                    <td><label id="lb_4"></label> </td>
+                </tr>
+                <tr>
+                    <td><label>Comment</label></td>
+                    <td> <textarea row="5" cols="20" name="commt"></textarea> </td>
+                    <td><label id="lb_5"></label></td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                    </td>
+                    <td> <input type="button" value="Submit" onclick="validate()"> </td>
+                </tr>
+            </table>
+
+        </form>
+    </center>
+
+
+
+    <script>
+        function validate() {
+
+            var un = fm.txtname.value; //abc //123 //xy
+            var email = fm.txtemail.value; //abc@gmail.com
+            var phoneNum = fm.txtnumber.value; //0323-
+                 
+
+
+
+
+
+            var reg = /^[A-Z][a-zA-Z]{5,12}$/ //123 [a-ZA-Z]
+
+
+
+
+
+            var reg2 = /^[a-zA-Z0-9!""#$&*+@._[\]-^{|}] {4,20}[@gmail.com]{10}$/ 
+            var reg3 = /^[0][3][0-9]{2}[-][0-9]{7}$/
+
+
+
+            if (un.length == 0) { //empty
+
+                document.getElementById("lb_1").innerHTML = "Please enter your name";
+                document.getElementById("lb_1").style.color = "red";
+                document.getElementById("box_1").style.borderColor = "red";
+            }
+
+            else if (reg.test(un) == false) {  //123 //true
+                document.getElementById("lb_1").innerHTML = "Invalid Name";
+                document.getElementById("lb_1").style.color = "red";
+            }
+            else if (un.length != 0) {
+                document.getElementById("lb_1").innerHTML =  " ";
+                document.getElementById("box_1").style.borderColor = "green";
+            }
+
+
+
+
+
+
+
+
+
+            if (email.length == 0) {
+
+                document.getElementById("lb_2").innerHTML = "Please enter your name";
+                document.getElementById("lb_2").style.color = "red";
+                document.getElementById("box_2").style.borderColor = "red";
+            }
+
+            else if (reg2.test(email) == false) {
+                document.getElementById("lb_2").innerHTML = "Invalid Email";
+                document.getElementById("lb_2").style.color = "red";
+            }
+
+            else if (email.length != 0) {
+                document.getElementById("lb_2").innerHTML = "";
+                document.getElementById("box_2").style.borderColor = "green";
+            }
+
+
+            if (phoneNum.length == 0) {
+
+                document.getElementById("lb_3").innerHTML = "Please enter your Number";
+                document.getElementById("lb_3").style.color = "red";
+                document.getElementById("box_3").style.borderColor = "red";
+            }
+
+            else if (reg3.test(phoneNum) == false) {
+                document.getElementById("lb_3").innerHTML = "Invalid Number";
+                document.getElementById("lb_3").style.color = "red";
+            }
+
+            else if (phoneNum.length != 0) {
+                document.getElementById("lb_3").innerHTML = "";
+                document.getElementById("box_3").style.borderColor = "green";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

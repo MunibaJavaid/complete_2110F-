@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #canva {
+                        border: 1px solid black;
+                        width: 200px;
+                        height:130px;                  
+        }
+    </style>
+</head>
+<body>
+    <!-- CANVAS EXAMPLES -->
+    <canvas id = "canva"></canvas>
+    <script>
+        // RECTANGLE
+    //    var canvas =  document.getElementById("canva");
+    //    var ctx = canvas.getContext('2d');
+    //    ctx.beginPath()
+    //    ctx.rect(50,30,100,100)//x,y,w,h
+    //    ctx.fillStyle = "blue"
+    //    ctx.fill()
+    //    ctx.lineWidth = 5;
+    //    ctx.strokeStyle = "red"
+    //    ctx.stroke();
+    //*************Line Code*************
+    //    var canvas = document.getElementById('canva');
+    //    var context = canvas.getContext('2d')
+    //    context.beginPath();
+    //    //Starting Point
+    //    context.moveTo(10,45)//x,y
+    //    //END Point
+    //    context.lineTo(180,47)
+    //    context.strokeStyle = "red";
+    //    context.stroke();
+    //************CIRCLE**************
+    var canvas = document.getElementById('canva');
+    var ctx = canvas.getContext("2d")
+    var x = 100;
+    var y = 80;
+    var endAngle = 2*Math.PI;
+    ctx.beginPath()
+    ctx.arc(x,y,60,0,endAngle)
+    ctx.fillStyle = 'pink';
+    ctx.fill()
+    ctx.lineWidth = 10;
+    ctx.strokeStyle = 'black'
+    ctx.stroke()
+
+
+
+    </script>
+</body>
+</html>

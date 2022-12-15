@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .red_italic{
+            font-style: italic;
+            font-size: 25px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+    <!-- Example 4 -->
+
+    <p class="red">This is text.</p>
+    <button id="button1">Add Class</button>
+    <button id="button2">Remove Class</button>
+    <button id="button3">Toggle Class</button>
+
+
+    <script src="JqueryCdnFiles/jquery-3.6.0.js"></script>
+
+    <script>
+        //Example 4
+        $(document).ready(function () {
+            $('#button1').click(function () {
+                $('.red').addClass('red_italic');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#button2').click(function () {
+                $('.red').removeClass('red_italic');
+            });
+        })
+
+
+        $(document).ready(function () {
+            $("#button3").click(function () {
+                $(".red").toggleClass("red_italic");
+            });
+        })
+
+
+
+    </script>
+</body>
+
+</html>

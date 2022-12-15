@@ -1,0 +1,41 @@
+<!-- document.getElementByClassname -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="example">My country name is Pakistan.</div> 
+  <div class="example">My name is Muniba</div> 
+
+
+    <div id = "demo">Hello</div>
+   
+    <button onclick="myFunction()">Click</button>
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("example");
+        document.getElementById("demo").innerHTML = "Class 0 index get: "+x[1].innerHTML
+        // x[0].innerHTML = "Hello World";
+
+
+      }
+    </script>
+</body>
+
+</html>

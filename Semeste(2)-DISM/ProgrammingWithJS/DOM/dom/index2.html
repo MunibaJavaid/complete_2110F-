@@ -1,0 +1,36 @@
+<!-- document.getElementByTag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript DOM Example 2</h2>
+
+<div id="main">
+<p>My country name is Pakistan</p>  
+<p>My name is Muniba Javaid</p>  
+</div>
+ 
+<p id="demo"></p> 
+<p id = "demo2"></p> 
+
+<script>
+var x = document.getElementById("main");
+var y = x.getElementsByTagName("p");
+
+document.getElementById("demo").innerHTML = "first index value of y: "+y[0].innerHTML;
+document.getElementById("demo2").innerHTML = "Second index value of y: "+ y[1].innerHTML;
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

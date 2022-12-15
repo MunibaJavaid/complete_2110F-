@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding = "iso-8859-1" ?>
+
+
+<FLowerPlanet>
+    <Name>Rose</Name>
+    <Price>Rs 250</Price>
+    <Description> Red in Color </Description>
+    <Number> 17 </Number>
+</FLowerPlanet>

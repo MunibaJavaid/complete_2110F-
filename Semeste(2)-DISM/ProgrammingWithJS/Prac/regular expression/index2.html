@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <form>
+       Name: <input type="text" id = "uname">
+       <button type="button" onclick="func()">Submit</button>
+   </form>
+   <script>
+       function func(){
+       var u_name =  document.getElementById("uname").value;
+       var reg = /^[A-Z][a-zA-Z]{5,12}$/;
+       if(reg.test(u_name)){
+           alert("valid")
+       }
+       else{
+           alert("Invalid")
+       }
+    }
+   </script> -->
+
+   <form action="">
+       Mobile Number <input type="text" id = "num">
+       <button type="button" onclick="Num()">Submit</button>
+   </form>
+<script>
+    function Num(){
+    var number = document.getElementById("num").value;
+    var reg2 = /^[0][3][0-9]{2}[-][0-9]{7}$/
+    if(reg2.test(number)){
+        alert("valid")
+    }
+    else{
+        alert("invalid")
+    }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <form action="">
+        <input type="text" id="pword">
+        <button type="submit" onclick="func()">Submit</button>
+    </form>
+    <script>
+        function func() {
+        var pass=document.getElementById("pword").value;
+        var exp=/[a-zA-Z0-9]{,12}/;
+        if(exp.test(pass)){
+            alert("Valid");
+        }
+        else{
+            alert("Invalid");
+        }
+        }
+    </script> -->
+
+    <!-- <input type="text" name="" id="uname">  
+    <button type="button" onclick="func()"> Submit</button>
+
+    <script>
+        function func(){
+            var unm = document.getElementById("uname").value;
+            var exp = /^[a-z][A-Z0-9a-z]{5,12}$/
+            if(exp.test(unm)){
+                alert("valid")
+            }
+            else{
+                alert("invalid")
+            }
+        }
+    </script> -->
+<!-- 
+    Mobile Number <input type="text" id = "num">
+    <button type="button" onclick="num()">Submit</button>
+    <script>
+        function num(){
+           var num =  document.getElementById("num").value;
+           var exp2 = /^[0][3][0-9]{2}[-][0-9]{7}$/
+           if(exp2.test(num)){
+               alert("valid");
+           }
+           else{
+               alert("invalid")
+           }
+        }
+    </script> -->
+
+
+    <!-- <script>
+        var checklist = "Watching Birds";
+        var exp=/biRds/i;
+        var n = checklist.search(exp);
+        alert("Seraching bird string is: "+n)
+    </script> -->
+
+    
+<!-- <script>
+    var checklist = "Watching Birds";
+    var exp=/birds/i;
+    var n = checklist.replace(exp, "Cows");
+    alert("Replace String of bird is: "+n)
+</script> -->
+
+<!-- <script>
+    var inputTxt="Do you have money?"
+    var exp=/[^a-z]/g;  
+    var n=inputTxt.match(exp);
+    alert(n);
+</script> -->
+</body>
+</html>

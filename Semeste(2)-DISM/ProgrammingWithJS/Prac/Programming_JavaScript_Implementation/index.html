@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    
+
+    <!--  Searching String  -->
+    <h1>PROGRAMMING WITH JAVASCRIPT</h1>
+    <p>"Watching Birds</p>
+
+
+<script>
+    var name = "Watching Birds";
+    var n =  name.search(/BIrds/i);  //
+    alert(n)
+
+</script>
+
+<script>
+    var name2 = "Watching Birds";
+    var n2 = name2.replace(/BIRDS/i,"Cows")
+    console.log(n2);
+</script>
+
+
+<!-- <script>
+    var checklist = "Watching Birds";
+    var n = checklist.replace("Birds", "Cows");
+    console.log("Replace String of bird is: "+ n);
+    alert("Replace String of bird is: "+n)
+</script> -->
+
+<!-- 
+     <script>
+        var checklist = "Watching Birds";
+        var n = checklist.replace(/BIrDs/i, "Cows");
+        console.log("Replace String of bird is: "+ n);
+        alert("Replace String of bird is: "+n)
+    </script> -->
+
+<!-- <script>
+    var checklist = "Watching Birds";
+    var n = checklist.search(/BIrds/i);
+    console.log("Searching String number of bird is: "+ n);
+    alert("Seraching bird string is: "+n)
+</script> -->
+
+    <h2> <u> Searching String </u> </h2>
+
+
+    <p>Watching Birds</p>
+
+
+    <button type="button" onclick="func()">Search String</button>
+
+
+    <p id = "para">Searching String print in this para</p>
+
+    <script>
+
+        
+        function func(){
+        var change = "Watching Bird";
+        var n = change.search("Bird")
+        var print = document.getElementById("para").innerHTML = "Bird Searching String position is: "+ n;
+        alert(print)
+        }
+    </script>
+
+
+    
+
+    <!-- Replacing String -->
+
+    <!-- <h2> <u> Replacing String </u> </h2>
+     <p>Watching  <span id = "chng"> Birds </span> </p>
+     <button type="button" onclick="replaced()">Replace String</button>
+     <p id = "para2">Replace String Print in this para</p>
+
+     <script>
+         function replaced(){
+             var rep = "Watching Birds";
+             var changeRep = rep.replace("Birds","Cows")
+             document.getElementById("chng").innerHTML = "Cows"
+             var show = document.getElementById("para2").innerHTML = "Birds Replace to Cows: "+changeRep;
+             alert(show);
+         }
+     </script> -->
+
+
+</body>
+</html>

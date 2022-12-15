@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href= "bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href= "style.css">
+    <link rel="stylesheet" href= "fontawesome-free-6.0.0-web/css/all.css">
+</head>
+<body>
+    <!-- nav -->
+    <div class="container-fluid" id="main">
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navi">
+
+
+            <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="logo" width="150"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <ul class="navbar-nav ml-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Services
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="mayoun.html">Mayoun</a>
+                            <a class="dropdown-item" href="mehendi.html">Mehendi</a>
+                            <a class="dropdown-item" href="barat.html">Barat</a>
+                            <a class="dropdown-item" href="walima.html">Walima</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#" id="myBtn6">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="myBtn5">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                            Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+
+        <!-- contact -->
+        <div class="map">
+            <div class="container">
+                <div><h1>Contact Us</h1></div>
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="googlemap" style="width:100%; height:410px;"></div>
+                    </div>
+                    <br />
+                    <div class="col-md-6">
+                        <form class="my-form">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="email" class="form-control" id="form-name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" class="form-control" id="form-email" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Telephone</label>
+                                <input type="text" class="form-control" id="form-subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Email your Message</label>
+                                <textarea class="form-control" id="form-message" placeholder="Message"></textarea>
+                            </div>
+                            <button class="btn btn-default" type="submit">Contact Us</button>              
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+     <!-- footer -->
+
+ <div class="container-fluid p-5" id = "footer">
+
+    <div class="row">
+      <div class="col-lg-5 col-xs-12 about-company">
+        <h2>WEDDING PLANNER</h2>
+        <p class=" text-white-50">Wedding planning is the process of coordinating <br> all of
+             the details involved in the making a wedding <br> a remarkable event</p>
+      </div>
+      <div class="col-lg-3 col-xs-12 links">
+        <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+          <ul class="m-0 p-0">
+            <li>- <a href="mayoun.html">Mayoun halls decoration</a></li>
+            <li>- <a href="mehendi.html">Mehendi halls decoration</a></li>
+            <li>- <a href="barat.html">Barat halls decoration</a></li>
+            <li>- <a href="walima.html">Walima halls decoration</a></li>
+          </ul>
+      </div>
+      <div class="col-lg-4 col-xs-12 location">
+        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+        <p>2022, All of the details involved in the making a wedding a remarkable event</p>
+        <p class="mb-0"><i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i></p>
+      </div>
+    </div>
+  </div>
+
+
+                
+    <!-- MODAL SIGN IN AND SIGN UP -->
+    <!--Sign up-->
+
+    
+        
+    <!--SIgn in-->
+
+    <div class="container">
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header" style="padding:10px 70px;">
+
+                        <h1> Sign in</h1>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+
+
+                    </div>
+
+                    <div class="modal-body" style="padding:20px 40px;">
+                        <form role="form">
+                            <div class="form-group" id="form1">
+                                <span><i class="fas fa-envelope"></i></span>
+                                <input type="text" required id="usrname" placeholder="Enter email">
+                            </div>
+
+                            <div class="form-group" id="form2">
+                                <span><i class="fas fa-lock"></i></span>
+                                <input type="password" required id="psw" placeholder="Enter password">
+                            </div><br>
+                            <p style="float:right; font-size:12px"> <a href="#" style="color:black">Forgot Password?</a></p>
+                            <br><br>
+                            <button type="submit" class="btn btn-dark btn-block" id="btn-login"><span><i
+                                        class="fas fa-sign-in-alt"></i></span> Login</button>
+                        </form>
+                    </div>
+                    <p style="text-align:center">or sign in with:</p>
+
+
+
+                    <div class="modal-footer">
+                        <div class="text-center">
+                            <br>
+                            <button type="button" class="btn btn-white"><i
+                                    class="fab fa-facebook-f text-center"></i></button>
+                            <button type="button" class="btn btn-white"><i class="fab fa-twitter"></i></button>
+                            <button type="button" class="btn btn-white"><i class="fab fa-google-plus-g"></i></button>
+                        </div>
+                        <br>
+                        <p style="color:#999; font-size:12px">Not a member? <a href="#" id = "Change_Modal" style="color: black;font-weight: bold;">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--Sign up-->
+
+    
+        <div class="modal fade" id="modal-signup" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="header">
+                        <div class="modal-header">
+                            <h1> REGISTER</h1>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-body" >
+
+                        <p   class= "text-center" style= "font-weight: bold;">Please fill in this form to create an account.</p> <hr>
+                        <form role="form" style="padding-left:100px;">
+                            <div class="form-group" id="form1">
+                                <h5>Full Name*</h5>
+                                <input type="text" required id="usrname" placeholder="Enter your name">
+                            </div>
+
+                            <div class="form-group" id="form1">
+                                <h5>Email*</h5>
+                                <input type="text" required id="email" placeholder="Enter your email">
+                            </div>
+
+
+                            <div class="form-group" id="form1">
+                                <h5>Password*</h5>
+                                <input type="password" required id="psw" placeholder="Enter password">
+                            </div>
+
+                            <div class="form-group" id="form1">
+                                <h5>Repeat Password*</h5>
+                                <input type="password" required id="re-psw" placeholder="Repeat Password">
+                            </div>
+
+                            <label>
+                                <input type="checkbox" checked="checked" />&nbsp&nbsp;&nbsp;Remember me</label><br>
+                            <p class="mt-2">By Creating an account you agree to our <br><a href="#" style="color: black; font-weight: bold;">Terms & Privacy</a></p>
+                            <br>
+                            <button type="submit" class="btn btn-dark btn-block" id="btn-singup">Sing up</button>
+                        </form>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+    
+<script src = "bootstrap-4.6.1-dist/js/jquery-3.6.0.slim.min.js"></script>
+<script src = "script.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <script type="text/javascript">
+        jQuery(function ($) {
+            // Google Maps setup
+            var googlemap = new google.maps.Map(
+                document.getElementById('googlemap'),
+                {
+                    center: new google.maps.LatLng(44.5403, -78.5463),
+                    zoom: 8,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+            );
+        });
+    </script>
+
+<script src = "bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>HTML FORM</h1>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" required placeholder="Enter your First Name" autofocus autocomplete="off"> <br> <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required autofocus><br> <br>
+
+        <label for="url">URL</label>
+        <input type="url" id = "URL"><br> <br>
+
+       <label for="age">Age</label>
+       <input type= "number" value = 15 id = "age" min = "10" max = "45"><br> <br>
+
+       <label for=""> Survey for packages scales [scale: 1-10]</label>
+       <input type= "range" min = "1" max = "10"><br> <br>
+
+       <label for="date">Date</label>
+       <input type="date" id = "date" min = "2000-01-01" max = "2023-01-01"> <br> <br>
+       
+       <label for="time">Time</label>
+       <input type="time" id = "time"> <br> <br>
+
+       <label for="color">Color</label>
+       <input type= "color" id = "color" > <br> <br>
+
+       <label for="pay">Select the mode of payment: </label>
+       <input type="text" name = "payment" list = "paymentList">
+       <datalist id = "paymentList">
+           <option value="Cash-on-delivery"></option>
+           <option value="Net Banking"></option>
+            <option value="Credit"></option>
+       </datalist> <br> <br>
+
+       <progress value = "35" max = "100" ></progress>
+
+
+
+
+
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+
+</html>

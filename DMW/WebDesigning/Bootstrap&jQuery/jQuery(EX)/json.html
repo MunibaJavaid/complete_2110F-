@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo" style="border: 1px solid black;"></p>
+
+    <p id = "demo1" style="border: 1px solid red;"></p>
+    <script>
+        //Simple JSON METHOD
+
+        var Student = [{"name":"John", "age":30,"city":"NewYork"},
+    {"name": "David","age":40,"city":"London"}]
+
+    document.write(Student[0].name +"<br>");
+    document.write(Student[1].city + "<br>");
+    document.write(Student[0].age);
+
+    //Simple JavaScript Object
+    var person = {name:"xyz",age:24}
+    alert(person.age);
+
+    //Object Convert JSON
+    var employee = {name: "abc",age:25,Education:"Graduate",City:"Pakistan"}
+    var result = JSON.stringify(employee);
+    var print = document.getElementById("demo").innerHTML = result;
+
+    console.log(print);
+    
+    //JSON TO OBJECT
+    var person = {"name":"David","age":30,"city" : "London"}
+
+    var str = JSON.stringify(person);
+    var obj = JSON.parse(str);
+
+    var print = " ";
+
+    print += "FirstName: " +obj.name+ "<br>"
+    print += "Age: " +obj.age+ "<br>"
+    print += "City: " +obj.city+ "<br>"
+
+    document.getElementById("demo1").innerHTML = print
+
+    </script>
+</body>
+</html>

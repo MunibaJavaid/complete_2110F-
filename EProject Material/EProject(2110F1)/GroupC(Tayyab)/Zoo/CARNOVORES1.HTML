@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARNIVORES</title>
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CARNIVORES1.CSS">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+</head>
+
+<body>
+
+         <!-- NavBar -->
+    <nav class="navbar navbar-expand-md bg-danger navbar-dark fixed-top">
+
+
+        <a class="navbar-brand" href="the zoo.html"><img src="Images/logo1.png" alt="logo" width="120"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav ml-3">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="the zoo.html">Home</a>
+                </li>
+
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        More Info
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="menbership.html">Membership</a>
+                        <a class="dropdown-item" href="tickets.html">Ticket</a>
+                        <a class="dropdown-item" href="events.html">Events</a>
+                    </div>
+                </li>
+            </ul>
+
+            
+            <form class="form-inline">
+
+                <div class="input-group">
+
+                    <input type="text" class="form-control" placeholder="Search" id="inp">
+                    
+                    <div class="input-group-append ">
+                        <button type="button" class="btn btn-secondary bg-primary" id="search">
+                            <i class="fa fa-search"></i></button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div id="CARNI-image">
+        <h1 id="text-center"> CARNIVORES</h1>
+        <p>A carnivore is <b>  an organism that mostly eats meat, or the flesh of animals</b>. Sometimes 
+            carnivores are called predators. Organisms that carnivores hunt are called prey.
+            Carnivores are a major part of the food web, a description of which organisms eat which 
+            other organisms in the wild.
+        </p>
+      </div>
+      <h1 class=" text-center text-muted mt-5" id="not_find_any_thing"></h1>
+      <!-- CARD -->
+    <div class="mt-5">
+
+        <div class="row container-fluid">
+
+            <div class="col-sm-12 col-md-6 col-lg-8">
+
+                <div class="card">
+
+                    <img class="card-img-top" src="Images/tiger.jpeg" alt="Card image">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">Tiger</h4>
+                        <p class="card-text">The tiger is the largest living cat species and a member of the
+                            genus Panthera. It is most recognisable for its dark vertical stripes on orange
+                            fur with a white underside. An apex predator, it primarily preys on ungulates
+                            such as deer and wild boar.
+                        </p>
+                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
+                            data-target="#myModal1">See More</button>
+
+                        <!-- Modal -->
+                        <div id="myModal1" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" >Tiger</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="main-side">
+                                        <div class="left-side">
+                                            <p><b> Scientific name:</b> Panthera tigris</p>
+                                            <p><b> Height:</b> 80 – 85 cm (Adult, At Shoulder)</p>
+                                            <p><b> Mass:</b>90 – 310 kg (Adult), 65 – 180 kg (Adult)</p>
+                                            <p><b> Speed:</b>49 – 65 km/h (Adult, In Short Bursts)</p>
+                                            <p><b> Kingdom:</b>Animalia</p>
+                                            <p><b> Family:</b>Felidae</p>
+                                            <p><b>Lifespan</b> 8 – 10 years (In the wild)</p>
+                                            <p><b> Bite Force:</b>1,050 psi</p>
+                                        </div>
+                                        <div class="right-side">
+                                            <img src="Images/tiger.jpeg" alt="picture" >
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Images/lion.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Lion</h4>
+                        <p class="card-text">The lion is a large cat of the genus Panthera native to Africa and India. It has 
+                            a muscular, deep-chested body, short, rounded head, round ears, and a hairy 
+                            tuft at the end of its tail. 
+                        </p>
+                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
+                        data-target="#myModal2">See More</button>
+
+                    <!-- Modal -->
+                    <div id="myModal2" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" >Lion</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="main-side">
+                                    <div class="left-side">
+                                        <p><b> Speed:</b> 80 km/h (Maximum, In Short Bursts)</p>
+                                        <p><b> Family:</b> Felidae</p>
+                                        <p><b> Scientific name:</b> Panthera leo</p>
+                                        <p><b> Subfamily:</b> Pantherinae</p>
+                                        <p><b> Lifespan:</b> 10 – 15 years (Adult, In the wild), 8 – <br> 10 years (Adult, In the wild)</p>
+                                        <p><b> Mass:</b> 190 kg (Adult), 130 kg (Adult)</p>
+                                        <p><b> Bite Force:</b> 650 PSI</p>   
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="Images/lion.jpg" alt="picture" >
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Images/wolf.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Wolf</h4>
+                        <p class="card-text">The wolf, also known as the gray wolf or grey wolf, is a large
+                            canine native to Eurasia and North America.
+                        </p>
+                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
+                        data-target="#myModal3">See More</button>
+
+                    <!-- Modal -->
+                    <div id="myModal3" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" >Wolf</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="main-side">
+                                    <div class="left-side">
+                                        <p><b> Scientific name:</b> Canis lupus/p>
+                                            <p><b> Eats:</b> Arctic fox</p>
+                                            <p><b> Height:</b> 80 – 85 cm (Adult, At Shoulder)</p>
+                                            <p><b> Mass:</b> 30 – 80 kg (Adult), 23 – 55 kg (Adult)</p>
+                                            <p><b> Speed:</b>70 km/h</p>
+                                            <p><b> Kingdom:</b>Animalia</p>
+                                            <p><b> Family:</b>Canidae</p>
+                                            <p><b> Bite Force:</b>almost 400 pounds of pressure per square inch!</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="Images/wolf.jpg" alt="picture" >
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Images/img7.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Hyenas</h4>
+                        <p class="card-text">Hyenas, or hyaenas, are feliform carnivoran mammals of the
+                            family Hyaenidae. With only four extant species, it is the fifth-smallest
+                             biological family in the Carnivora and one of the smallest in the class
+                              Mammalia.
+                        </p>
+                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
+                        data-target="#myModal4">See More</button>
+
+                    <!-- Modal -->
+                    <div id="myModal4" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" >Hyenas</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="main-side">
+                                    <div class="left-side">
+                                        <p><b> Speed:</b> 64 km/h </p>
+                                        <p><b> Family:</b> Hyaenidae; Gray, 1821</p>
+                                        <p><b> Class:</b> Mammalia</p>
+                                        <p><b> Order:</b> Carnivora</p>
+                                        <p><b> Suborder:</b>Feliformia</p>
+                                        <p><b> Height:</b>Spotted hyena: 70 – 92 cm, Striped hyena: 60 – 80 cm, Brown hyena: 70 – 80 cm</p>
+                                        <p><b> Bite Force:</b> around 1,100 psi</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="Images/img7.jpg" alt="picture" >
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Images/Bear.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Bear</h4>
+                        <p class="card-text">Bears are carnivoran mammals of the family Ursidae.They are
+                            classified as caniforms, or doglike carnivorans.</p>
+                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
+                        data-target="#myModal5">See More</button>
+
+                    <!-- Modal -->
+                    <div id="myModal5" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" >Bear</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="main-side">
+                                    <div class="left-side">
+                                        <p><b> Scientific Name:</b>Ursidae</p>
+                                        <p><b> Family:</b>  Ursidae; G. Fischer de Waldheim, 1817</p>
+                                        <p><b> Class:</b> Mammalia</p>
+                                        <p><b> Kingdom:</b> Animalia</p>
+                                        <p><b> Order:</b> Carnivora</p>
+                                        <p><b> phylum:</b> Chordata</p>
+                                        <p><b> Speed:</b>  Polar bear: 40 km/h, Brown bear: 56 km/h</p>
+                                        <p><b> Height:</b>70 – 150 cm (Adult, At Shoulder)</p>
+                                        <p><b> Bite Force:</b> 975 psi</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="Images/Bear.jpg" alt="picture" >
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="row mt-5">
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <div class="card">
+
+                    <img class="card-img-top" src="Images/img6.jpg" alt="Card image">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">Cheetah</h4>
+                        <p class="card-text">The cheetah is a large cat native to Africa and central Iran. It is the fastest 
+                            land animal, estimated to be capable of running at 80 to 128 km/h with the 
+                            fastest reliably recorded speeds being 93 and 98 km/h.
+                        </p>
+                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
+                        data-target="#myModal6">See More</button>
+
+                    <!-- Modal -->
+                    <div id="myModal6" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" >cheetah</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="main-side">
+                                    <div class="left-side">
+                                        <p><b> Speed:</b>  93 and 98 km/h</p>
+                                        <p><b> Family:</b> 	Felidae</p>
+                                        <p><b> Scientific name:</b> Acinonyx jubatus</p>
+                                        <p><b> Subfamily:</b>	Felinae</p>
+                                        <p><b> Mass:</b>  21 – 72 kg (Adult)</p>
+                                        <p><b> Bite Force:</b> 400-500PSI</p>
+                                        <p><b>Height</b> 67 – 94 cm (Adult, At Shoulder)</p></p>
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="Images/img6.jpg" alt="picture" >
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Images/african dog.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">African Wild Dog</h4>
+                        <p class="card-text">The African wild dog also called the African painted dog and the African hunting
+                            dog, is a wild canine which is a native species to sub-Saharan Africa.</p>
+                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
+                        data-target="#myModal7">See More</button>
+
+                    <!-- Modal -->
+                    <div id="myModal7" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" >African Wild Dog</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="main-side">
+                                    <div class="left-side">
+                                        <p><b> Speed:</b> more than 44 miles per hour</p>
+                                        <p><b> Family:</b> Canidae</p>
+                                        <p><b> Scientific name:</b> Lycaon pictus</p>
+                                        <p><b> Subfamily:</b> 	Caninae</p>
+                                        <p><b> Lifespan:</b> about 10 years</p>
+                                        <p><b> Mass:</b> 22 kg (Adult)</p>
+                                        <p><b> Bite Force:</b> 317 PSI</p>
+                                        <p><b>Genus:</b> lycoan</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="Images/african dog.jpg" alt="picture" >
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Images/wolverine.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Wolverine</h4>
+                        <p class="card-text">The wolverine, Gulo gulo, also referred to as the glutton, carcajou,
+                            or quickhatch, is the largest land-dwelling species of the family Mustelidae. It is a
+                             muscular carnivore and a solitary animal.
+                        </p>
+                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
+                        data-target="#myModal8">See More</button>
+
+                    <!-- Modal -->
+                    <div id="myModal8" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" >Wolverine</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="main-side">
+                                    <div class="left-side">
+                                        <p><b> Scientific name:</b>Gulo gulo</p>
+                                        <p><b> Length:</b>65 – 110 cm (Adult) </p>
+                                        <p><b> Mass:</b>9 – 25 kg (Adult) </p>
+                                        <p><b> Speed:</b>up to 30 miles per hour</p>
+                                        <p><b> Kingdom:</b>	Animalia</p>
+                                        <p><b> Family:</b>Mustelidae</p>
+                                        <p><b> Bite Force:</b>50 PSI</p>
+                                        <p><b>Lifespan:</b> 5 – 13 years (In the wild)</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="Images/wolverine.jpg" alt="picture" >
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            
+        </div>
+    </div><br><br>
+    
+          <!-- Footer -->
+<footer class="page-footer font-small indigo bg-dark">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left ">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="mt-3 mb-3">Quick Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="the zoo.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="mt-3 mb-3">Animals Corner</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="Mammals.html">Mammals</a>
+            </li>
+            <li>
+              <a href="Reptiles.html">Reptiles</a>
+            </li>
+            <li>
+              <a href="CARNOVORES1.HTML">Carnivorus</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="mt-3 mb-3">Zoo Policy</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="menbership.html">Membership</a>
+            </li>
+            <li>
+              <a href="photo policy.html">Photo Policy</a>
+            </li>
+            <li>
+              <a href="Ticket.html">Ticket</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+
+            <h5 class="mt-3 mb-3 ">Latest Update From Zoo</h5>
+
+            <p class="info">Get latest update from Zoo</p>
+  
+          <form class="input-group mt-4">
+            <input type="text" class="form-control form-control-md" placeholder="E-mail"
+              aria-label="Enter Your E-mail" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-primary my-0" type="button">Sign up</button>
+            </div>
+          </form>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+      
+      </div>
+    <!-- Footer Links -->
+  <div class="row align-items-center d-flex "  id="social-icons">
+    <div class="col-sm-12 col-md-12 col-lg-12 text-center mt-4" id="face">
+          <a href="https://www.facebook.com/" class="text-primary">
+          <i class="fa-brands fa-facebook"></i></a>   
+       <a href="https://www.instagram.com/" class="text-danger">
+          <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/" class="text-primary">
+          <i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"><span> © </span>2022 Copyright:
+      <a href="the zoo.html"> Centeral Zoo.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer> 
+
+    <script src="bootstrap-4.6.1-dist/js/jquery-3.6.0.slim.min.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script>
+        //jquery coding
+$(document).ready(function(){
+    $('#search').click(function(){
+
+
+      var checker = 0; 
+      for (var i = 0; i < 8; i++) {
+
+
+        var card = $("div").filter(".col-sm-12")[i];
+        var title = $("h4").filter(".card-title")[i].innerText.toUpperCase();
+
+        
+        if (title.indexOf($("#inp").val().toUpperCase()) > -1) {
+          card.style.display = 'block';
+          checker++;
+        }
+        else{
+          card.style.display = 'none';
+        }
+      }
+      
+  if (checker > 0) {
+    $("#not_find_any_thing").text("");
+  }
+  else {
+    $("#not_find_any_thing").text("No Result Found").fadeIn();
+  }
+
+
+
+
+
+
+    });
+});
+    </script>
+</body>
+
+</html>

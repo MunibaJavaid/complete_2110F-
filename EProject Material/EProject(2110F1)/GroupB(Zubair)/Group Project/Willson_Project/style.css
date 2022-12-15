@@ -1,0 +1,273 @@
+/* 
+
+#list1 .brand-list li{
+    list-style: none;
+    display: inline;
+   font-size: 25px;
+   font-weight: bolder;
+   justify-content: space-between;
+   color: black;
+   text-decoration: none;
+}
+
+#div2{
+    display: flex ;
+}
+
+#z1{
+    width: 100%;
+    height: 60px;
+    background-color:#000 ;
+}
+
+.footer-element li{
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+    width: auto;
+    grid-gap: 10px;
+    align-content: space-between;
+    margin: auto;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+
+#d1 a{
+    text-decoration: none;
+    color: #000;
+}
+.footer-element  button{
+    background-color: white;
+    color: gray;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 18px;
+    font-size: 15px;
+    font-weight:bold;
+}
+.btn{
+    margin-left: 10px;
+}
+.btn-top{
+    color: grey;
+    margin-top: 10px;
+}
+.footer-element  button:hover{
+    color: #000;
+    border: 1.5px solid #000;
+    text-decoration: underline;
+    transition: 0.6s ease;
+}
+#footer{
+    margin:auto;
+}
+#sec1{
+    padding-left: 10px;
+}
+#sec2{
+    padding-left: 150px;
+}
+#sec3{
+    padding-left: 120px;
+}
+#sec4{
+    padding-left: 180px;
+}
+#footer-elements{
+    list-style: none;
+    display: flex;
+    color: black;
+    font-weight: 450;
+    background-color:hsl(60, 3%, 81%);
+    height: 60px;
+    width: 100%;
+}
+
+#footer-elements li{
+    padding: 10px;
+    align-items: center;
+    padding-left: 38px ;
+    margin-top: 8px;
+}
+#footer-elements li a{
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+#footer-elements-2{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    background-color: hsl(60, 3%, 81%);
+    height: 60px;
+}
+
+
+#footer-elements-2 a{
+    margin-right: 30px;
+   padding-top: 20px;
+   font-size: 25px;
+   color: black;
+}
+
+.fa-facebook:hover{
+    color: rgb(46, 46, 172);
+    transition: 0.2s ease;
+}
+
+.fa-twitter:hover{
+    color: rgb(84, 164, 234);
+    transition: 0.2s ease;
+}
+
+.fa-instagram:hover{
+    color: rgb(206, 33, 102);
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 20px 20px 100px -50px #000;
+    transition: 0.5s ease; }*/
+
+
+
+#nav{
+    border: 5px solid black;
+}
+
+ #nav-icon{
+     color: #ce2029;
+ }
+
+ #search-btn{
+     background-color: #ce2029;
+ }
+
+#btn1{
+    
+    color:#ce2029 ;
+    background-color: white;
+    font-weight: 1000;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 6px;
+    border: none;
+    padding: 7.5px;
+    
+}
+#btn2{
+    
+    color:white;
+    background-color: #ce2029 ;
+    font-weight: 1000;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 4px;
+    border: none;
+    padding: 8.5px;
+}
+#carouselbtn{
+    background-color: black;
+    padding: 10px;
+    font-size: 22px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+}
+ 
+h3{
+    color: white;
+    margin-top: 146px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 30px;
+    padding: 15px;
+    background-color: black;
+    text-align: center;
+    border: 5px solid #ce2029;
+
+}
+
+h2{
+
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 30px;
+    color: black;
+    border: 5px solid #ce2029 ;
+    padding: 15px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+#brand-btn{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 22px;
+    background-color: black ;
+    color:#ce2029;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+#card-header{
+    margin-top: 50px;
+
+}
+ 
+#blank{
+    background-color: black;
+    margin-top: 50px;
+    width: 100%;
+    height: 60px;
+}
+
+#footer{
+    width: 100%;
+}
+h6{
+    margin-top: 20px;
+}
+
+#copyrightsbar{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer-element{
+    margin: 10px;
+    text-decoration: none;
+   
+}
+
+#video-2{
+    margin-top: 60px;
+}
+
+#join{
+    background-color: #ce2029 ;
+    color:white;
+    font-weight: 1000;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 6px;
+    border: none;
+    padding: 7.5px;
+}
+
+
+
+

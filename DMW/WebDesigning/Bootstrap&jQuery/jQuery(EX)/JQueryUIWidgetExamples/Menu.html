@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/hot-sneaks/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+      <script>
+        $(document).ready(function() {
+          $("#demoMenu").menu();
+        });
+    </script> 
+
+
+</head> 
+<body>
+<ul id="demoMenu">
+
+	  <li><a href="#">Antarctica</a></li>
+	  <li><a href="#">Australia</a></li>
+	  <li><a href="#">Asia</a>
+	  	<ul>
+	      <!-- level Two -->
+	      <li class="ui-state-disabled"><a href="#">China</a></li>
+	      <li><a href="#">India</a></li>
+		  <li><a href="#">Japan</a></li>
+	    </ul>
+	  </li>
+
+	  <li><a href="#">Africa</a></li>
+	  <li><a href="#">Europe</a>
+	    <ul>
+	      <li><a href="#">Germany</a>
+	        <ul>
+	          <!-- Level Three -->
+	          <li><a href="#">Munich</a></li>
+	          <li><a href="#">Berlin</a></li>
+	          <li><a href="#">Frankfurt</a></li>
+	        </ul>
+	      </li>
+	      <!-- Level Two -->
+	      <li><a href="#">England</a>
+	        <ul>
+	          <!-- Level Three-->
+	          <li><a href="#">London</a></li>
+	          <li><a href="#">Manchester</a></li>
+	          <li><a href="#">TrentBridge</a></li>
+	        </ul>
+	      </li>
+	      <!-- Level Two -->
+	      <li><a href="#">France</a></li>
+	    </ul>
+	  </li>
+	  <!-- Level One -->
+	  <li class="ui-state-disabled"><a href="#">Scotland</a></li>
+	</ul>
+</body>
+</html>

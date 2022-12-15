@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value = "Add a new List Item" id = "btnAdd">
+    <input type="button" value = "Undelegate" id = "btnUdelegate">
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+    </ul>
+
+
+    <script src = "JqueryCdnFiles/jquery-3.6.0.js"></script>
+    <script>
+       
+
+        $(document).ready(function(){
+
+            $('ul').click(function(){
+                $('li').fadeOut(500);
+            })
+
+            $("#btnAdd").click(function(){
+                $("ul").append("<li>New List Item</li>");
+            })
+
+            $("#btnUdelegate").click(function(){
+                $("li").off("click");
+            })
+        })
+
+    </script>
+</body>
+</html>

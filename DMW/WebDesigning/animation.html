@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #anim{
+            width: 300px;
+            height: 200px;
+            position: relative;
+
+            animation-name: example;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count:infinite;
+            animation-direction: alternate;
+        }
+        @keyframes example{
+            0%{
+                background-color: blue;
+                left:0px;
+                top:0px;
+            }
+            25%{
+                background-color: brown;
+                left:200px;
+                top:0px;
+            }
+            50%{
+                background-color: crimson;
+                left: 200px;
+                top:200px
+            }
+            75%{
+                background-color: darkmagenta;
+                left:0px;
+                top:200px;
+            }
+            100%{
+                background-color: forestgreen;
+                left:0px;
+                top:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id = "anim">
+
+    </div>
+</body>
+</html>

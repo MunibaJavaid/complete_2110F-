@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body >
+<!--     
+    <h1>EVENT HANDLING</h1>
+
+    <button type="button" onclick="alert('Hello World')">Click</button>
+
+    <button type="button" onclick="FirstEvent()">Get Function</button>
+
+    <button type="button" oncontextmenu="SecondEvent()">Right Click</button>
+
+
+    <a href="#" onmouseover="ThirdEvent()">Mouse Over</a>
+    
+    <button type="button" onmouseout="first()">Click</button>
+<br>
+<br>
+    <form action="" onsubmit="formSubmit()">
+        <input type="text">
+        <input type="submit">
+    </form> -->
+
+
+    <!-- DOM EXAMPLE -->
+
+    <!-- <h1 id = "demo">Dom Random Text</h1>
+
+    <button type="button" onclick="change()">Change Text</button>
+
+<br> <br>
+    <img src="Images/onImage.jpg" id = "img" alt="bulb" 
+    width="150" height="200">
+  <br>
+    <button type="button" onclick="On()">On</button>
+    <button type="button" onclick="Off()">OFF</button> -->
+
+
+
+<!-- BOOK EXAMPLE -->
+<!-- 
+<img src= "Images/img3.jpg" alt="ford" width="300" height="200" id = "myImg"> 
+
+<br> <br>
+Model: <input type="text" id = "myText" value = "Ford Car" readonly = "readonly">
+
+<br> <br>
+<input type= "button" value = " Change Image" onclick="changeImage()" > -->
+
+<!-- ANOTHER EXAMPLES -->
+
+Name<input type="text" id = "txt"> <br>
+<input type="radio" name = "gender" value = "male"> Male
+<input type="radio" name = "gender" value = "female"> Female <br><br>
+
+<button type="button" onclick="info()">Click</button><br>
+<h3 id = "fetch"> Data Get here</h3>
+
+
+<script>
+   
+    function info(){
+        var nm = document.getElementById("txt").value //xyz
+        var gender = document.getElementsByName("gender")[0].checked //male
+        if(gender){
+            gndr = "male"
+        }
+        else{
+            gndr = "Female"
+        }
+
+        var mm = document.getElementById("fetch").innerHTML = "Your name is: "+nm+ "gender is "+gndr;
+        console.log(mm)
+    }
+
+</script>
+
+
+
+    <!-- External Javascript -->
+    <script src = "script.js">
+        
+// function changeImage(){
+    //    var imgText =  document.getElementById("myImg").alt; //ford
+    //    if(imgText == "ford"){
+    //        document.getElementById("myImg").src =" Images/img4.jpg";
+    //        document.getElementById("myImg").alt = "ferrari";
+    //        document.getElementById("myText").value = "Ferrari Car"
+    //    }
+    //    else{ 
+    //       document.geto9ElementById("myImg").src =" Images/img3.jpg";
+    //        document.getElementById("myImg").alt = "ford";
+    //        document.getElementById("myText").value = "Ford Car"
+    //    }
+    // }
+    </script>
+   
+</body>
+</html>

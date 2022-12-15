@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="movies.xsl" type="text/xsl" ?>
+
+<collection>
+ 
+
+	<movie>
+		<name>Avengers</name>
+		<year>2019</year>
+		<genre>Action/Fiction</genre>
+	</movie>
+
+	<movie>
+		<name>Avtar</name>
+		<year>2009</year>
+		<genre>Action/Fiction</genre>
+	</movie>
+
+	<movie>
+		<name>Titanic</name>
+		<year>1997</year>
+		<genre>Romance/Drama</genre>
+	</movie>
+	
+	<movie>
+		<name>Titanic</name>
+		<year>1997</year>
+		<genre>Romance/Drama</genre>
+	</movie>
+
+	<movie>
+		<name>Avtar</name>
+		<year>2009</year>
+		<genre>Action/Fiction</genre>
+	</movie>
+
+
+	<movie>
+		<name>Avtar</name>
+		<year>2009</year>
+		<genre>Action/Fiction</genre>
+	</movie>
+
+</collection>

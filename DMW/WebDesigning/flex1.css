@@ -1,0 +1,20 @@
+.flex-Container{
+    background-color: pink;
+    border: 5px double orange;
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 10px 15px 10px 15px;
+}
+.flex-Container div{
+  border:2px solid black;
+  margin:0px 5px 0px 5px;
+  padding: 5px;
+  width:100%;
+  text-align: center;
+  border-radius: 6px;
+  background-color: coral;
+ 
+}
+.flex-Container div:hover{
+    background-color: crimson;
+}

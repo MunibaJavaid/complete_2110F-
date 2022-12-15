@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+   <head>
+
+      <link rel = "stylesheet" href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      
+      
+      <script>
+	  
+         $(function()
+		  {
+            $( "#button1" ).button(
+			{
+               icons: {
+                  primary: "ui-icon-locked"
+               },
+               text: false
+            });
+			
+			
+            $( "#button2" ).button({
+               disabled:true
+            });
+			
+			
+            $( "#button3" ).button({
+               icons: {
+                  primary: "ui-icon-gear",
+                  secondary: "ui-icon-triangle-1-s"
+               }
+            });
+         });
+		 
+      </script>
+   </head>
+   
+   <body>
+   
+   
+      <button id = "button1">
+         Button with icon only
+      </button>
+      
+      <button id = "button2">
+         Button Disabled
+      </button>
+      
+      <button id = "button3">
+         Button with two icons
+      </button>
+      
+      
+   </body>
+</html>

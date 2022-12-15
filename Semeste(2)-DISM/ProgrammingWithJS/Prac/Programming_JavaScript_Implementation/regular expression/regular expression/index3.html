@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+ <input type="text" placeholder="Username" id="uname"><br>
+ <label id="one" style="color: red;visibility: hidden;">Invalid Username</label> <br>
+ <button onclick="validate()" type="button">Submit</button> 
+</form>
+<script>
+    function validate(){
+    var username=document.getElementById("uname").value;
+    var reg=/^[a-z][a-z0-9]{7,29}$/i;
+    //^:we cannot use any charaqcters other than words
+    //$:  we can not add any character other than word at any point
+    if(reg.test(username)){
+        alert("valid Username");
+    }
+    else{
+        alert("invalid username");
+    }
+    }
+</script> 
+</body>
+</html>

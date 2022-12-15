@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>JSON WEB API</div>
+    <div id = "demo"> </div>
+
+    <script>
+        //step1
+        var xmlhttp = new XMLHttpRequest();
+        //step 2
+        var url = "https://jsonplaceholder.typicode.com/posts/1";
+
+        xmlhttp.onreadystatechange = function(){
+
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            
+            //step 3
+               var obj =  JSON.parse(xmlhttp.response);
+
+               for(var key in obj){
+                   document.getElementById("demo").innerHTML += "<b>"+ key+ "</b>"+ " " +obj[key]+ "<br>";
+
+               }
+            }
+        }
+
+        //step 4
+        xmlhttp.open("GET",url,true);
+        xmlhttp.send();
+    </script>
+    
+</body>
+</html>

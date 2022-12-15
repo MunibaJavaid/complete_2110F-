@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+
+<!-- Document Type Definition -->
+<!DOCTYPE Email[
+
+    <!ELEMENT Email (From,To,Subject,Message)>
+    <!ELEMENT From (#PCDATA)>
+    <!ELEMENT To (#PCDATA)>
+    <!ELEMENT Subject (#PCDATA)>
+    <!ELEMENT Message (#PCDATA)>
+]>
+
+<Email>
+    <From>abc@gmail.com</From>
+    <To>xyz@yahoo.com</To>
+    <Subject>Note</Subject>
+    <Message>Hi, How are you</Message>
+</Email>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myImage" src="ONbulb.jpg" width="100" height="180">
+    
+<p>
+    <button type="button" onclick="one()">Light On</button>
+    <button type="button" onclick="two()">Light Off</button>
+    </p>
+    <script>
+        function one(){
+            document.getElementById("myImage").src="ONbulb.jpg"
+        }
+        function two(){
+            document.getElementById("myImage").src="OFFbulb.jpg"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+   <head>
+
+
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  -->
+        <link rel = "stylesheet" href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+      <script>
+         $(function() {
+			 
+			 
+			 // Content & Track Paramter
+            $( "#tooltip1" ).tooltip({
+               content: "<strong>Hi!</strong>",
+               track:true
+            }),
+			
+			
+			
+			//Disable Paramter
+            $( "#tooltip2" ).tooltip({
+               disabled: true
+            }),
+			
+
+            //Position Paramter
+            $( "#tooltip3" ).tooltip({
+               position: {
+                  my: "center bottom",
+                  at: "center top-10"
+               }
+            }),
+						
+			
+			
+			//Show Paramter		
+			 $('#tooltip4').tooltip('show');
+			 
+			 
+			 //Hide Paratmer
+			 $('#tooltip5').tooltip('hide');
+			 		
+					
+			$( "#tooltip6" ).tooltip({
+			  tooltipClass: "custom-tooltip-styling"
+				});
+					
+					
+			 	 });
+
+      </script>
+      
+      
+   </head>
+   
+   <body>
+
+      <label>Tooltip:</label>
+      <input id = "tooltip1" title = "tooltip">
+      
+      <br><br><br>
+      
+      <label>Disbaled Tooltip:</label>
+      <input id = "tooltip2" title = "tooltip">
+      
+      <br><br><br>
+      
+      <label>Enter Date of Birth:</label>
+      <input id = "tooltip3" title = "Please use MM.DD.YY format.">
+      
+      <br><br><br>
+      
+      <label>Tooltip Show:</label>
+      <input id ="tooltip4" title="tooltip">
+      
+      <br><br><br>
+      
+       <label>Tooltip Hide:</label>
+      <input id ="tooltip5" title="tooltip">
+      
+            <br><br><br>
+      
+       <label>TooltipClass:</label>
+      <input id ="tooltip6" title="tooltip">
+      
+   </body>
+</html>

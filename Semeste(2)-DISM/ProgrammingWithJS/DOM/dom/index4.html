@@ -1,0 +1,37 @@
+<!-- document.getElementByClassname -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="example">
+        <p>My country name is pakistan</p>
+      </div>
+      
+      <div class="example_color">
+        <p>Hello</p>
+      </div>
+      
+      <div class="example_color">
+        <p>My name is Pakistan</p>
+      </div>
+      
+      <p>Click the button to change the background color of the first div element with the classes "example" and "color".</p>
+      
+      <button onclick="myFunction()">Try it</button>
+      
+     
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("example_color");
+        x[1].style.backgroundColor = "red";
+      }
+      </script>
+      
+</body>
+</html>

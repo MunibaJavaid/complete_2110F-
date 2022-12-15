@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div id = "demo" style="border:1px solid black">Div1</div>
+
+
+    <div id = "demo2" style="border: 1px solid red;">Div2</div>
+ <script>
+
+// Simple JSON METHOD 
+
+
+// var Student = [
+
+//     {"name":"John","age":30,"city":"NewYork"}, 
+//     {"name":"David","age":40,"city":"London"}   
+// ]
+// document.write(Student[0].name + "<br>")  
+// document.write(Student[1].city + "<br>")
+// document.write(Student[0].age)   
+
+
+
+
+
+//  var employee = [{"name":"ahmed","education":"Inter","age":"25"},
+//  {"name":"saad","education":"Matric","age":"22"}]
+//  alert(employee[0].age);//25
+//  alert(employee[1].age);//22
+
+
+// JSON Convert to Object
+
+var person = '{"name":"David","age":"45","city":"Island"}'
+var obj = JSON.parse(person);
+
+var print = "";
+ print += "FirstName :" +obj.name + "<br>"  
+ print += "Age: " +obj.age + "<br>"        
+ print += "City:" +obj.city + "<br>" 
+document.getElementById("demo").innerHTML = print;
+console.log(print);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Simple Object Method
+    // var person = {
+    //     name:"David",
+    //     age:24
+    // }
+    // alert(person.name);
+
+
+
+
+
+
+    var employee = {
+        name:"Zahid",
+        age:45,
+        Education: "Graduate",
+        City:"NewYork"
+    }
+
+
+
+    var result =  JSON.stringify(employee)
+
+
+
+    var print_result = document.getElementById("demo2").innerHTML = result;
+    console.log(print_result)
+
+
+
+
+    // var JsonForamt = JSON.stringify(employee);  
+    // var result = document.getElementById("demo2").innerHTML = JsonForamt;
+    // console.log(result);
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

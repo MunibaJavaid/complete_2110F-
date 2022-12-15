@@ -1,0 +1,78 @@
+/* External CSS */
+
+/* body{
+    background-color: darksalmon;
+} */
+/* h1,h2{
+    color: black;
+    background-color: cornflowerblue;
+
+}
+p{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+.para{
+    color: darkviolet;
+    background-color: goldenrod;
+}
+.para2{
+    border:2px solid black;
+}
+#demo{
+    font-size: 45px;
+    color: blue;
+    font-weight: bold;
+    background-color:darkkhaki;
+    border: 2px solid red;
+}
+#para3{
+    font-size: 35px;
+} */
+
+#link1:link{
+    color: blueviolet;
+    background-color: cadetblue;
+    border:2px solid black;
+}
+#link1:visited{
+    color: darkblue;
+    background-color: darkkhaki;
+    border:2px solid black;
+}
+
+#link1:hover{
+    color: red;
+    background-color: rgb(197, 226, 30);
+    border:2px solid black;
+
+}
+#link2:link{
+    color: blueviolet;
+    background-color: cadetblue;
+    border:2px solid black;
+}
+#link2:visited{
+   color: darkmagenta;
+   background-color: darksalmon;
+    border:2px solid black;
+}
+
+#link2:hover{
+   color: deeppink;
+   background-color: gold;
+    border-style: none;
+
+}
+#para::first-line{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: indigo;
+    background-color: khaki;
+}
+#para::first-letter{
+    color:maroon;
+    font-size: 50px;
+}

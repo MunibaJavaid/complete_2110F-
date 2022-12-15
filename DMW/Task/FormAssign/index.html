@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="head">
+        <img src="image/aptech.png" alt="Aptech logo" style="width: 700px;height: 200px;">
+        <h1>STUDENT REGISTRATION FORM</h1>
+    </div>
+    <div class="container">
+        <form action="index.php">
+
+            <div class="row">
+                <div class="col-4">
+                    <label for="fname">FIRST NAME</label>
+                </div>
+                <div class="col-6">
+                    <input class = "input-one" type="text" id="fname" name="firstname" placeholder="Enter first name." maxlength="30"
+                        required="required">
+                    <span>(max 30 characters a-z and A-Z)</span>
+                </div>
+            </div>
+
+
+
+
+            
+
+            <div class="row">
+                <div class="col-4">
+                    <label for="lname">LAST NAME</label>
+                </div>
+                <div class="col-6">
+                    <input class = "input-one" type="text" id=lname" name="lastname" placeholder="Enter last name" maxlength="30"
+                        required="required">
+                    <span>(max 30 characters a-z and A-Z)</span>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+
+                <div class="col-4">
+                    <label for="dob">Date OF BIRTH</label>
+                </div>
+
+
+                <div class="col-6">
+
+                    <select id="days" name="days" form="dayform">
+                        <option value="Days:">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select id="month" name="months" form="monthform">
+                        <option value="Month:">Month</option>
+                        <option value="January">January</option>
+                        <option value="Febuary">Febuary</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                    <select id="year" name="Years" form="yearform">
+                        <option value="Year:">Year</option>
+                        <option value="1999">19999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006t</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="email">EMAIL ID</label>
+                </div>
+                <div class="col-6">
+                    <input type="email" id="email" name="email" placeholder="Enter email address" maxlength="30"
+                        required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="number">MOBILE NUMBER</label>
+                </div>
+                <div class="col-6">
+                    <input type="number" id="number" name="number" placeholder="Enter mobile number" maxlength="11"
+                        required="required">
+                    <span>(10 digit number)</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="gender">GENDER</label>
+                </div>
+                <div class="col-6">
+                    <label class="radio-inline">Male
+                        <input id="male" type="radio" name="gender" value="m">
+                    </label>
+                    <label class="radio-inline">Female
+                        <input id="female" type="radio" name="gender" value="f">
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="Address">ADDRESS</label>
+                </div>
+                <div class="col-6">
+                    <textarea name="address" id="" cols="40" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="city">CITY</label>
+                </div>
+                <div class="col-6">
+                    <input class = "input-one" type="text" id="city" name="city" placeholder="Enter city name" maxlength="30"
+                        required="required">
+                        <span>(max 30 characters a-z and A-Z)</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="code">PIN CODE</label>
+                </div>
+                <div class="col-6">
+                    <input type="number" id="code" name="pin-code" placeholder="Enter pincode" maxlength="6" required="required">
+                    <span>(10 digit number)</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="state">STATE</label>
+                </div>
+                <div class="col-6">
+                    <input class = "input-one" type="text" id="state" name="state" placeholder="Enter state" maxlength="30"
+                        required="required">
+                        <span>(max 30 characters a-z and A-Z)</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="city">COUNTRY</label>
+                </div>
+                <div class="col-6">
+                    <input class = "input-one" type="text" id="country" name="country" placeholder="Enter Country" maxlength="30"
+                        required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="hobies">HOBIES</label>
+                </div>
+                <div class="col-6">
+                    <label class="radio-inline">Drawing
+                        <input id="Drawing" type="checkbox" name="Hobies" value="Drawing">
+                    </label>
+                    <label class="radio-inline">Singing
+                        <input id="Singing" type="checkbox" name="Hobies" value="Singing">
+                    </label>
+                    <label class="radio-inline">Dancing
+                        <input id="Dancing" type="checkbox" name="Hobies" value="Dancing">
+                    </label>
+                    <label class="radio-inline">Sketching
+                        <input id="Sketching" type="checkbox" name="Hobies" value="Sketching">
+                    </label><br>
+                    <label class="radio-inline">Others
+                        <input id="other" type="checkbox" name="Hobies" value="other">
+                    </label>
+                    <input>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="QUALIFICATION">QUALIFICATION</label>
+                </div>
+                <div class="col-6">
+                    <table cellspacing="10">
+                        <tr>
+                            <td class="col-head">S.No</td>
+                            <td class="col-head">Examination</td>
+                            <td class="col-heads">Board</td>
+                            <td class="col-heads">Percentage</td>
+                            <td class="col-heads">Year of Passing</td>
+                        </tr>
+                        <tr>
+                            <td class="col-head">1</td>
+                            <td class="col-head">class X</td>
+                            <td class="col-input"><input class = "input-two" type="text" maxlength="10"></td>
+                            <td class="col-input"><input class = "input-two" type="text"></td>
+                            <td class="col-input"><input class = "input-two" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="col-head">2</td>
+                            <td class="col-head">class Xll</td>
+                            <td class="col-input"><input class = "input-two" type="text" maxlength="10"></td>
+                            <td class="col-input"><input class = "input-two" type="text"></td>
+                            <td class="col-input"><input class = "input-two" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="col-head">3</td>
+                            <td class="col-head">Graduation</td>
+                            <td class="col-input"><input class = "input-two" type="text" maxlength="10"></td>
+                            <td class="col-input"><input class = "input-two" type="text"></td>
+                            <td class="col-input"><input class = "input-two" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="col-head">4</td>
+                            <td class="col-head">Masters</td>
+                            <td class="col-input"><input class = "input-two" type="text" maxlength="10"></td>
+                            <td class="col-input"><input class = "input-two" type="text"></td>
+                            <td class="col-input"><input class = "input-two" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="col-head"></td>
+                            <td class="col-head"></td>
+                            <td class="col-input">(10 char max)</td>
+                            <td class="col-input">(upto 2 decimal)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="courses">COURSES<br>APPLIED FOR</label>
+                    </div>
+                    <div class="col-6">
+                        <label class="radio-inline">BCA
+                            <input id="bca" type="radio" name="courses" value="BCA">
+                        </label>
+                        <label class="radio-inline">B.COM
+                            <input id="bcom" type="radio" name="courses" value="B.COM">
+                        </label>
+                        <label class="radio-inline">B.SC
+                            <input id="bsc" type="radio" name="courses" value="B.SC">
+                        </label>
+                        <label class="radio-inline">B.A
+                            <input id="ba" type="radio" name="courses" value="B.A">
+                        </label>
+                    </div>
+                </div>
+    
+                    <div class = "btn">
+                       <button type="submit" formaction="submit.html" class="col-btn">Submit</button>
+                       <button type="reset" formaction="index.html" class="col-btn">Reset</button>
+                       
+
+                    </div>
+
+
+                
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <div class="form">
+
+        <form action="index.html">
+            <label>First Name:
+                <input type="text" name="username" size="40" maxlength="30" placeholder="Enter first name">
+                <span>(max 30 characters a-z and A-Z)</span>
+            </label><br>
+            <label>Last Name:
+                <input type="text" name="username" size="40" maxlength="30" placeholder="Enter last name">
+                <span>(max 30 characters a-z and A-Z)</span>
+            </label><br>
+            <label>Date of Birth:
+            </label>
+            <select id="days" name="days" form="dayform">
+                <option value="Days:">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            <select id="month" name="months" form="monthform">
+                <option value="Month:">Month</option>
+                <option value="January">January</option>
+                <option value="Febuary">Febuary</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+              <select id="year" name="Years" form="yearform">
+                <option value="Year:">Year</option>
+                <option value="1999">19999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006t</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+              </select>
+              
+                
+            
+
+        </form>
+
+
+    </div> -->

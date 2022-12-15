@@ -1,0 +1,37 @@
+<!-- querySelector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDIV {
+          border: 1px solid black;
+        }
+        </style>
+</head>
+<body>
+    <div id="myDIV">
+        <h2 class="example">A heading with class="example" in div</h2>
+        <p class="example">A paragraph with class="example" in div.</p> 
+      </div>
+      
+      <button onclick="myFunction()">Try it</button>
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myDIV");
+        x.querySelector(".example").innerHTML = "Hello World!";
+      }
+      </script>
+      
+</body>
+</html>
+
+<!-- With a querySelector statement, you can select an element based on a CSS selector. This means you can select elements by ID, class, or any other type of selector. Using the getElementById method, you can only select an element by its ID.
+
+Generally, you should opt for the selector that most clearly gets the job done.
+
+If you only need to select an element by ID or class, you can use getElementById or getElementsByClassName, respectively. If you need to use a more elaborate rule to select elements, the querySelector method is your best option. -->

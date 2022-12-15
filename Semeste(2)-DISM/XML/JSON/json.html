@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INTRO TO JSON</h1>
+   
+  
+    <script>
+        
+        var Address = {"Street":"123 New Xyz","City":"NEWYORK","PostalCode":"76875"} //JSON FORMAT
+        
+
+
+
+
+        document.write("The Product will be: "+"<b>"+ Address.City+"</b> <br>") //Newyork
+        document.write("Street: "+"<b>"+ Address.Street+"</b> <br>") //123 New Xyz
+
+
+
+        document.write(Address+ "<br>");// [object object]
+
+        var str = JSON.stringify(Address); 
+
+
+
+
+        document.write("Complete Data: "+"<b>"+ str+"</b> <br>")
+
+
+        var obj = JSON.parse(str) //Json to object
+
+      
+
+        for(var k in obj ){
+            document.write("<b>"+ k+": </b>"+obj[k]+"<br>");
+        }
+
+
+    </script>
+</body>
+</html>

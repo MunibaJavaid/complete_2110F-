@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<note
+xmlns="https://abc.com"
+xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://abc.com/ schema.xsd">
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>123</heading>
+  <body>Don't forget me this weekend!</body>
+</note>
+
+
+
+

@@ -1,0 +1,61 @@
+.dis{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;    
+}
+.main-tran{
+    width: 350px;
+    height: 250px;
+
+}
+#tran{
+    background-color: red;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+}
+#tran:hover{
+    background-color: blue;
+}
+#tran2{
+    background-color: cornflowerblue;
+    margin-left: 10px;
+    padding-left: 10px;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+
+}
+#tran2:hover{
+    background-color: crimson;
+}
+#para{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    transition-property: font;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+}
+#para:hover{
+    font-size: large;
+    font-weight: bold;
+    color: yellowgreen;
+    background-color: slateblue;
+}
+#tran3{
+    background-color: slateblue;
+    margin-left: 10px;
+    transition-property: background-color;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+#tran3:hover{
+    background-color: palevioletred;
+    width: 450px;
+}

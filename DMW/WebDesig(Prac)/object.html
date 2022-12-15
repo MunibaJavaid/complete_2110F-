@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+        //First Method to use Object
+        var obj = {
+            name:'Danish',
+            age:20,
+            education:'inter'
+        }
+        document.write("print Object data: "+"<br>"
+        +obj.name+ 
+        "<br>"+obj.education+
+        "<br>"+obj.age)
+     
+        //Second Method to use Object
+        var Person = new Object()
+        Person.Name = 'Fahad'
+        Person.Salary = 40000
+        Person.City = 'Karachi'
+        console.log("Person Object Data Get: \n"+Person.Name+"\n"+Person.Salary+"\n"+Person.City)
+
+        //Constructor Object
+        function employee(name,age,salary,education){
+            this.Name = name
+            this.Age = age
+            this.Salary = salary
+            this.Education = education
+            this.greet=function(){
+                return('Hi '+this.name);
+            }
+        }
+        var Employee1 = new employee('Sajid',15,20000,'inter')
+        Employee1.city = 'Lahore'
+        alert("Name: "+Employee1.Name+"\n"+"Age: "+Employee1.Age+"\n"+
+        "Salary: "+Employee1.Age+"\n"+"Education: "+Employee1.Education+"\n"+"City: "+Employee1.city);
+            var greeting=person1.greet();
+            alert(greeting);
+
+        //Access Object Using loop
+        document.write("<br>")
+        for(var key in Employee1){
+            document.write(key +" : " +Employee1[key]+ "<br>")
+        }
+
+ 
+
+
+    </script>
+    
+</body>
+</html>

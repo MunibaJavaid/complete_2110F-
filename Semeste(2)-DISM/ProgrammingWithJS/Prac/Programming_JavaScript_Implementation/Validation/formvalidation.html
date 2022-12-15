@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form Validation</title>
+<script>
+function validate()
+{
+		var un =fm.txtname.value;
+		var em = fm.txtemail.value;
+		var no = fm.txtnumber.value;
+		var con = fm.country.selectedIndex; //position
+		var comment = fm.commt.value;
+	
+		if(un.length == 0)
+		{
+			//document.write("Please enter your name");
+			document.getElementById("lb_1").innerHTML ="Please enter your name";
+			document.getElementById("lb_1").style.color= "Red";
+			document.getElementById("box_1").style.borderColor = "Red";
+		}
+		else if(un.length != 0)
+		{
+			document.getElementById("lb_1").innerHTML ="";
+			document.getElementById("box_1").style.borderColor = "Green";
+		}
+		//===============================================
+		if(em.length == 0)
+		{
+			//document.write("Please enter your name");
+			document.getElementById("lb_2").innerHTML ="Please enter your email";
+			document.getElementById("lb_2").style.color= "Red";
+			document.getElementById("box_2").style.borderColor = "Red";
+		}
+		else if(em.length != 0)
+		{
+			document.getElementById("lb_2").innerHTML ="";
+			document.getElementById("box_2").style.borderColor = "Green";
+		}
+		
+		//===============================================
+		if(no.length == 0)
+		{
+			//document.write("Please enter your name");
+			document.getElementById("lb_3").innerHTML ="Please enter your phoneno";
+			document.getElementById("lb_3").style.color= "Red";
+			document.getElementById("box_3").style.borderColor = "Red";
+		}
+		else if(no.length != 0)
+		{
+			document.getElementById("lb_3").innerHTML ="";
+			document.getElementById("box_3").style.borderColor = "Green";
+		}
+		//====================================================
+		if(con == 0 )
+		{
+			document.getElementById("lb_4").innerHTML ="Please Select your country";
+				document.getElementById("lb_4").style.color= "Red";
+		}
+		else if(con != 0)
+		{
+			document.getElementById("lb_4").innerHTML ="";
+		}
+		//==============================================================
+		if(comment.length == 0 )
+		{
+			document.getElementById("lb_5").innerHTML ="Please Type Comment";
+				document.getElementById("lb_5").style.color= "Red";
+			
+		}
+		else if(comment.length != 0)
+		{
+			document.getElementById("lb_5").innerHTML ="";
+		}
+		if(un.length != 0 && em.length != 0 && no.length != 0 && con !=0 && comment.length != 0  ) // true
+		{
+			var win = window.open();
+			win.document.write("User Name is "+ un +"<br>");
+			win.document.write("User Email is "+ em +"<br>");
+			win.document.write("User Phone is "+ no +"<br>");
+			win.document.write("User Country is "+ fm.country.value +"<br>");
+			win.document.write("User Comment is "+ comment +"<br>");
+		}
+}
+
+</script>
+
+</head>
+
+<body>
+<center>
+<form name="fm" method="get">
+<table width="500" >
+ <tr>
+    <td colspan="2" align="center"><h3>Form Validation</h3></td>
+  </tr>
+  <tr>
+    <td><label>Enter  Your Name</label></td>
+    <td><input type="text" name="txtname" id="box_1" /></td>
+    <td><label id="lb_1"></label>
+  </tr>
+  <tr>
+     <td><label>Enter  Your Email</label></td>
+    <td><input type="text" name="txtemail" id="box_2"/></td>
+      <td><label id="lb_2"></label></td>
+  </tr>
+  <tr>
+     <td><label>Enter  Your Phone</label></td>
+    <td><input type="text" name="txtnumber" id="box_3"/></td>
+     <td><label id="lb_3"></label></td>
+  </tr>
+  <tr>
+    <td><label>Select Country</label></td>
+    <td>
+    	<select name="country">
+         		<option >Select Country</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">India</option>
+                <option value="Srilanka">Srilanka</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="China">China</option>
+        </select>
+    </td>
+     <td><label id="lb_4"></label></td>
+  </tr>
+  <tr>
+    <td><label>Comments</label></td>
+    <td><textarea rows="5" cols="20" name="commt"></textarea></td>
+    <td><label id="lb_5"></label></td>
+  </tr>
+   <tr>
+    <td></td>
+    <td><input type="button" value="Submit" onclick="validate()"/></td>
+  </tr>
+</table>
+</form>
+</center>
+</body>
+</html>

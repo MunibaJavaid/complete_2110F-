@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="">
+        <input type="text" id="pword">
+        <button type="submit" onclick="func()">Submit</button>
+    </form>
+    <script>
+        function func() {
+            var pass=document.getElementById("pword").value;
+        var exp=/[a-zA-Z0-9]{,12}/;
+        if(exp.test(pass)){
+            alert("Valid");
+        }
+        else{
+            alert("Invalid");
+        }
+        }
+      
+    </script> -->
+    <!-- <script>
+        var checklist = "Watching Birds";
+        var exp=/biRds/i;
+        var n = checklist.search(exp);
+        alert("Seraching bird string is: "+n)
+    </script> -->
+
+    
+<!-- <script>
+    var checklist = "Watching Birds";
+    var exp=/birds/i;
+    var n = checklist.replace(exp, "Cows");
+    alert("Replace String of bird is: "+n)
+</script> -->
+
+<script>
+    var inputTxt="Do you have money?"
+    var exp=/[^a-z]/g;  
+    var n=inputTxt.match(exp);
+    alert(n);
+</script>
+</body>
+</html>

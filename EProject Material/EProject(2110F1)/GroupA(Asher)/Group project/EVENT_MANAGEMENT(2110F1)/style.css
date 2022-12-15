@@ -1,0 +1,247 @@
+#main{
+
+    background-image: url("images/main1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+/* nav bar */
+.nav-link{
+    color: white !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#navi{
+    background-color:black !important;
+    opacity: 0.7;
+}
+.links ul a {
+    
+    list-style-type: none;
+    color: white;
+    transition: color .2s;
+}
+.links ul li a:hover{
+    text-decoration:none;
+    color:#4180CB;
+}
+/* CARD */
+.card-img-top{
+    height: 300px;
+}
+.container-fluid .text-center{
+    background-image: linear-gradient(100deg, rgb(8, 7, 8) 0%, #ecc38a 100%);
+}
+/* contact */
+.map{
+    padding: 30px;
+    box-shadow: 10px 10px 10px rgb(94, 92, 92);
+    background-color: #b39061;
+}
+.map h1{
+    text-align: center;
+}
+/* about */
+.about{
+    text-align: center;
+    max-width: 60rem;
+    margin:0 auto;
+ }
+ .about img{
+    width: 100%;
+    margin-bottom: 10px;
+ }
+ .about h3{
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #b39061;
+ }
+ .about p{
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 1;
+    color: black;
+ }
+ .team .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+ }
+ .team .box-container .box{
+    background: white;
+    padding: 20px;
+    text-align: center;
+ }
+ .team .box-container .box img{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+ }
+ .team .box-container .box h3{
+    font-size: 40px;
+    color: #b39061;
+    text-transform: capitalize;
+    font-weight: 600;
+ }
+ .team .box-container .box p{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+ }
+.heading{
+    text-align: center;
+}
+#facebook{
+    color: #b39061;
+ }
+ #twitter{
+    color: #b39061;
+ }
+ #instagram{
+  color:  #b39061;
+ }
+/* footer */
+#footer{
+    background-image: linear-gradient(100deg, rgb(8, 7, 8) 0%, #725d40 100%);
+    color:white;
+}
+/*Sign in*/		
+
+
+.modal-header h1{
+	color:black;
+	text-align:center;
+	font-size:28px;
+	}
+	 
+#form1 span{
+	display:inline-block;
+	color:black;
+	padding-right:20px;
+	vertical-align:middle;
+	font-size:30px;
+	}
+
+#form1 input{
+	border:none; outline:none;
+	display:inline-block;
+	width:77%;
+	}
+
+#form2 span{
+	display:inline-block;
+ 	padding-right:23px;
+	color:black;
+	vertical-align:middle;
+	font-size:30px;
+	}
+
+
+#form2 input{
+	border:none;
+	outline:none;
+	width:77%;
+	background-color:#f5f5f5;
+	height:40px;
+	outline:none;border:none;
+	display:inline-block;
+	border-radius:6px;
+	width:80%;
+	}
+
+#btn-login{
+	background-color:rgb(0, 0, 0);
+	border-radius:20px;
+	height:35px;
+	font-size:16px;
+	transition:0.4s;
+	box-shadow:2px 4px 18px #666666;
+	}
+
+#btn-login:hover{
+    background-color:#d1ae43;
+    color: black;
+    font-weight: bold;
+	}
+
+
+/*Sign up*/
+
+	
+#form1 h5{
+	font-weight:bold;
+	}
+
+#form1 input{
+	background-color:#f5f5f5;
+	height:40px;
+	outline:none;border:none;
+	display:inline-block;
+	border-radius:6px;
+	width:80%;
+	}
+	
+
+#form1 input[type=text]::placeholder{
+	padding-left:10px;
+	}
+
+#form1 input[type=password]::placeholder{
+	padding-left:10px;
+	}
+
+#form2 input[type=password]::placeholder{
+	padding-left:10px;
+	}
+
+#form1 input[type=text]{
+	padding-left:10px;
+	}
+
+#form1 input[type=password]{
+	padding-left:10px;
+	}
+
+#form2 input[type=password]{
+	padding-left:10px;
+	}
+
+
+.close{
+	margin-right:-38px;
+	}
+
+#btn-singup{
+	background-color:rgb(0, 0, 0);
+	border-radius:20px;
+	height:35px;
+	width:80%;
+	font-size:16px;
+	transition:0.4s;
+	box-shadow:2px 4px 18px #666666;
+	}
+
+#btn-singup:hover{
+	background-color:#d1ae43;
+    color: black;
+    font-weight: bold;
+	}
+
+
+.modal-footer button{
+	background-color:#f5f5f5;
+	width:60px;
+	border-radius:25px;
+	font-size:16px;
+	color:black;
+	transition:0.4s;
+	box-shadow:2px 2px 8px #666666;
+	}
+	
+	
+.modal-footer button:hover{
+    transform:scale(0.9);
+    background-color: #d1ae43;
+}
